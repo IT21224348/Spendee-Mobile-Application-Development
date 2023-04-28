@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Spendee"
+        tools:targetApi="31">
+        <activity
+            android:name=".transaction"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Category"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Edit_Category"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".Add_Category"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Home"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Viewbills"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".update_bills"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".editincome"
+            android:exported="true" >
+
+
+        </activity>
+        <activity
+            android:name=".editexpense"
+            android:exported="true" >
+
+        </activity>
+        <activity
+            android:name=".substrackexpense"
+            android:exported="true">
+
+
+        </activity>
+        <activity
+            android:name=".addincome"
+            android:exported="true">
+
+
+        </activity>
+        <activity
+            android:name=".mainLoan"
+            android:exported="true" />
+        <activity
+            android:name=".Update_goal"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Add_bill"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Lent_loan"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".BorrowedLoan"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Update_loan"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Add_Loan"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".addgoal"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Goal"
+            android:exported="true">
+
+        </activity>
+        <activity
+            android:name=".Login"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Signup"
+            android:exported="true">
+
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

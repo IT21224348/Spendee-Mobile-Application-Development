@@ -1,0 +1,70 @@
+<resources>
+    <string name="app_name">SPENDEE</string>
+    <string name="App_name">SPENDEE</string>
+    <string name="create_account">Create Account</string>
+    <string name="log_in">Log In</string>
+         // Loan Management
+    <string name="crud_cancle">Cancel</string>
+    <string name="check_box_borrowed">Borrowed</string>
+    <string name="Check_box_lent">Lented</string>
+    <string name="user_icon">User Profile</string>
+    <string name="home_btn">Home</string>
+    <string name="select_date">Calender</string>
+    <string name="transaction_btn">Transaction</string>
+    <string name="bill_btn">Bill</string>
+    <string name="target_btn">Goal</string>
+    <string name="update_btn">Save</string>
+    <string name="update_cancle">Cancle</string>
+    <string name="crud_add">Add</string>
+    <string name="loan_name">Name</string>
+    <string name="loan_borrowed_date">Date</string>
+    <string name="dates_to_be_settled">Date to be settled</string>
+    <string name="add_loan">Add Loan</string>
+    <string name="delete_btn">Delete</string>
+    <string name="update_icon">Update</string>
+    <string name="add_goal">Add New goal</string>
+    <string name="loan_amount">Amount</string>
+    <string name="target_date">21/08/2023</string>
+    <string name="lented_person_name">Dulhan</string>
+    <string name="page_name">Loans</string>
+
+
+
+
+
+
+
+    <string-array name="months_array">
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>Octomber</item>
+        <item>November</item>
+        <item>December</item>
+
+
+
+
+
+    </string-array>
+
+    <string-array name="planets_array">
+        <item>Mercury</item>
+        <item>Venus</item>
+        <item>Earth</item>
+        <item>Mars</item>
+        <item>Jupiter</item>
+        <item>Saturn</item>
+        <item>Uranus</item>
+        <item>Neptune</item>
+    </string-array>
+
+
+
+</resources>
