@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
 
-class transaction : AppCompatActivity() {
+class Transaction : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,7 +22,7 @@ class transaction : AppCompatActivity() {
         val loan_btn:ImageButton = findViewById(R.id.loan_btn)
 
         update_trasaction.setOnClickListener {
-            val intent = Intent(this,editincome::class.java)
+            val intent = Intent(this,Update_income::class.java)
             startActivity(intent)
         }
 
@@ -36,7 +36,7 @@ class transaction : AppCompatActivity() {
 
         //Transaction Button
         transaction_btn2.setOnClickListener {
-            val intent = Intent(this,transaction::class.java)
+            val intent = Intent(this,Transaction::class.java)
             startActivity(intent)
         }
 
@@ -48,13 +48,13 @@ class transaction : AppCompatActivity() {
 
         //Bill Button
         bill_btn.setOnClickListener {
-            val intent = Intent(this,Viewbills::class.java)
+            val intent = Intent(this,View_bills::class.java)
             startActivity(intent)
         }
 
         //Loan Button
         loan_btn.setOnClickListener {
-            val intent = Intent(this,BorrowedLoan::class.java)
+            val intent = Intent(this,View_Borrowed_loan::class.java)
             startActivity(intent)
         }
     }

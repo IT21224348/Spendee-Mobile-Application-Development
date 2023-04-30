@@ -7,7 +7,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 
-class Lent_loan : AppCompatActivity() {
+class View_Lent_loan : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_view_lentloan)
@@ -28,13 +28,13 @@ class Lent_loan : AppCompatActivity() {
 
         //Borowed Loan
         borrowed.setOnClickListener {
-            val intent = Intent(this,BorrowedLoan::class.java)
+            val intent = Intent(this,View_Borrowed_loan::class.java)
             startActivity(intent)
         }
 
         //Lented Loan
         lent.setOnClickListener{
-            val intent = Intent(this,Lent_loan::class.java)
+            val intent = Intent(this,View_Lent_loan::class.java)
             startActivity(intent)
         }
 
@@ -66,7 +66,7 @@ class Lent_loan : AppCompatActivity() {
 
         //Transaction Button
         transaction_btn2.setOnClickListener {
-            val intent = Intent(this,transaction::class.java)
+            val intent = Intent(this,Transaction::class.java)
             startActivity(intent)
         }
 
@@ -78,13 +78,13 @@ class Lent_loan : AppCompatActivity() {
 
         //Bill Button
         bill_btn.setOnClickListener {
-            val intent = Intent(this,Viewbills::class.java)
+            val intent = Intent(this,View_bills::class.java)
             startActivity(intent)
         }
 
         //Loan Button
         loan_btn.setOnClickListener {
-            val intent = Intent(this,BorrowedLoan::class.java)
+            val intent = Intent(this,View_Borrowed_loan::class.java)
             startActivity(intent)
         }
     }

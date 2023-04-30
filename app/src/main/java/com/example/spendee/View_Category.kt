@@ -3,9 +3,9 @@ package com.example.spendee
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class editincome : AppCompatActivity() {
+class View_Category : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_update_income)
+        setContentView(R.layout.activity_view_category1)
     }
 }

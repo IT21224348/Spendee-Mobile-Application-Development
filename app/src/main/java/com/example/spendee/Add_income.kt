@@ -8,10 +8,10 @@ import android.widget.AdapterView
 import android.widget.ArrayAdapter
 import android.widget.Spinner
 
-class substrackexpense : AppCompatActivity() {
+class Add_income : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_add_expense)
+        setContentView(R.layout.activity_add_income)
 
         val spinner: Spinner = findViewById(R.id.spinner4)
 // Create an ArrayAdapter using the string array and a default spinner layout
@@ -26,6 +26,7 @@ class substrackexpense : AppCompatActivity() {
             spinner.adapter = adapter
         }
     }
+
     class SpinnerActivity : Activity(), AdapterView.OnItemSelectedListener {
 
         override fun onItemSelected(parent: AdapterView<*>, view: View?, pos: Int, id: Long) {
@@ -37,4 +38,7 @@ class substrackexpense : AppCompatActivity() {
             // Another interface callback
         }
     }
+
+
+
 }

@@ -11,7 +11,7 @@ import android.widget.Button
 import android.widget.ImageButton
 import android.widget.Spinner
 
- class Viewbills : AppCompatActivity() {
+ class View_bills : AppCompatActivity() {
      override fun onCreate(savedInstanceState: Bundle?) {
          super.onCreate(savedInstanceState)
          setContentView(R.layout.activity_view_bills)
@@ -36,7 +36,7 @@ import android.widget.Spinner
 
          //Update Bill
          update_bill.setOnClickListener {
-             val intent=Intent(this,update_bills::class.java)
+             val intent=Intent(this,Update_bill::class.java)
              startActivity(intent)
          }
 
@@ -59,7 +59,7 @@ import android.widget.Spinner
 
          //Transaction Button
          transaction_btn2.setOnClickListener {
-             val intent = Intent(this,transaction::class.java)
+             val intent = Intent(this,Transaction::class.java)
              startActivity(intent)
          }
 
@@ -71,13 +71,13 @@ import android.widget.Spinner
 
          //Bill Button
          bill_btn.setOnClickListener {
-             val intent = Intent(this,Viewbills::class.java)
+             val intent = Intent(this,View_bills::class.java)
              startActivity(intent)
          }
 
          //Loan Button
          loan_btn.setOnClickListener {
-             val intent = Intent(this,BorrowedLoan::class.java)
+             val intent = Intent(this,View_Borrowed_loan::class.java)
              startActivity(intent)
          }
 
