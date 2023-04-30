@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:backgroundTint="#003086"
-    tools:context=".Edit_Category">
+    tools:context=".Update_category">
 
 
     <ImageView

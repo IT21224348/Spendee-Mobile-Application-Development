@@ -18,7 +18,7 @@ class Goal : AppCompatActivity() {
 
          //Add Goal
         addgoal1.setOnClickListener{
-            val intent = Intent(this,addgoal::class.java)
+            val intent = Intent(this,Add_Goal::class.java)
             startActivity(intent)
         }
 
@@ -57,7 +57,7 @@ class Goal : AppCompatActivity() {
 
         //Transaction Button
         transaction_btn2.setOnClickListener {
-            val intent = Intent(this,transaction::class.java)
+            val intent = Intent(this,Transaction::class.java)
             startActivity(intent)
         }
 
@@ -69,13 +69,13 @@ class Goal : AppCompatActivity() {
 
         //Bill Button
         bill_btn.setOnClickListener {
-            val intent = Intent(this,Viewbills::class.java)
+            val intent = Intent(this,View_bills::class.java)
             startActivity(intent)
         }
 
         //Loan Button
         loan_btn.setOnClickListener {
-            val intent = Intent(this,BorrowedLoan::class.java)
+            val intent = Intent(this,View_Borrowed_loan::class.java)
             startActivity(intent)
         }
 

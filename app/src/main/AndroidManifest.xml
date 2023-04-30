@@ -12,7 +12,7 @@
         android:theme="@style/Theme.Spendee"
         tools:targetApi="31">
         <activity
-            android:name=".transaction"
+            android:name=".Transaction"
             android:exported="true" >
 
         </activity>
@@ -22,12 +22,12 @@
 
         </activity>
         <activity
-            android:name=".Category"
+            android:name=".View_Category"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".Edit_Category"
+            android:name=".Update_category"
             android:exported="true" >
 
         </activity>
@@ -42,40 +42,40 @@
 
         </activity>
         <activity
-            android:name=".Viewbills"
+            android:name=".View_bills"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".update_bills"
+            android:name=".Update_bill"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".editincome"
+            android:name=".Update_income"
             android:exported="true" >
 
 
         </activity>
         <activity
-            android:name=".editexpense"
+            android:name=".Update_expence"
             android:exported="true" >
 
         </activity>
         <activity
-            android:name=".substrackexpense"
+            android:name=".Add_expences"
             android:exported="true">
 
 
         </activity>
         <activity
-            android:name=".addincome"
+            android:name=".Add_income"
             android:exported="true">
 
 
         </activity>
         <activity
-            android:name=".mainLoan"
+            android:name=".Main_Loan"
             android:exported="true" />
         <activity
             android:name=".Update_goal"
@@ -88,12 +88,12 @@
 
         </activity>
         <activity
-            android:name=".Lent_loan"
+            android:name=".View_Lent_loan"
             android:exported="true">
 
         </activity>
         <activity
-            android:name=".BorrowedLoan"
+            android:name=".View_Borrowed_loan"
             android:exported="true">
 
         </activity>
@@ -108,7 +108,7 @@
 
         </activity>
         <activity
-            android:name=".addgoal"
+            android:name=".Add_Goal"
             android:exported="true">
 
         </activity>

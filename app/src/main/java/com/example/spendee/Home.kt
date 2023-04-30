@@ -24,19 +24,19 @@ class Home : AppCompatActivity() {
 
             //Income Button
         income_btn.setOnClickListener{
-            val intent = Intent(this,addincome::class.java)
+            val intent = Intent(this,Add_income::class.java)
             startActivity(intent);
         }
 
            //Expense Button
         expense_btn.setOnClickListener {
-            val intent = Intent(this,substrackexpense::class.java)
+            val intent = Intent(this,Add_expences::class.java)
             startActivity(intent)
         }
 
          //Transaction Button(main)
         transaction_btn.setOnClickListener {
-            val intent = Intent(this,transaction::class.java)
+            val intent = Intent(this,Transaction::class.java)
             startActivity(intent)
         }
 
@@ -56,7 +56,7 @@ class Home : AppCompatActivity() {
 
         //Transaction Button
         transaction_btn2.setOnClickListener {
-            val intent = Intent(this,transaction::class.java)
+            val intent = Intent(this,Transaction::class.java)
             startActivity(intent)
         }
 
@@ -68,13 +68,13 @@ class Home : AppCompatActivity() {
 
         //Bill Button
         bill_btn.setOnClickListener {
-            val intent = Intent(this,Viewbills::class.java)
+            val intent = Intent(this,View_bills::class.java)
             startActivity(intent)
         }
 
         //Loan Button
         loan_btn.setOnClickListener {
-            val intent = Intent(this,BorrowedLoan::class.java)
+            val intent = Intent(this,View_Borrowed_loan::class.java)
             startActivity(intent)
         }
 
