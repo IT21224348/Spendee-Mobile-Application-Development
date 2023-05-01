@@ -65,8 +65,8 @@
 
     <ImageButton
         android:id="@+id/home_btn"
-        android:layout_width="50dp"
-        android:layout_height="48dp"
+        android:layout_width="@dimen/Footer_icon_width"
+        android:layout_height="@dimen/Footer_icon_height"
         android:layout_marginStart="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"

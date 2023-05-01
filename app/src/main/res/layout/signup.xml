@@ -17,7 +17,7 @@
         android:background="@color/black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSignup" />
 
     <ImageView
         android:id="@+id/imageView7"
@@ -60,7 +60,7 @@
         app:layout_constraintVertical_bias="0.054" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/userName"
         android:layout_width="341dp"
         android:layout_height="50dp"
         android:layout_marginTop="50dp"
@@ -76,7 +76,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
     <EditText
-        android:id="@+id/editTextTextEmailAddress"
+        android:id="@+id/userEmail"
         android:layout_width="341dp"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
@@ -89,11 +89,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+        app:layout_constraintTop_toBottomOf="@+id/userName"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPassword"
+        android:id="@+id/password"
         android:layout_width="341dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -105,11 +105,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
+        app:layout_constraintTop_toBottomOf="@+id/userEmail" />
 
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/cnfpassword"
         android:layout_width="341dp"
         android:layout_height="50dp"
         android:layout_marginTop="20dp"
@@ -121,10 +121,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.43"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/password" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnSignup"
         android:layout_width="160dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
@@ -136,7 +136,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintTop_toBottomOf="@+id/cnfpassword" />
 
     <View
         android:id="@+id/view"
@@ -148,7 +148,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.253"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSignup" />
 
     <TextView
         android:id="@+id/textView3"
@@ -166,7 +166,7 @@
         app:layout_constraintEnd_toStartOf="@+id/view2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/view"
-        app:layout_constraintTop_toBottomOf="@+id/button2" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSignup" />
 
     <ImageButton
         android:id="@+id/google"
@@ -176,7 +176,7 @@
         android:backgroundTint="#FEFEFE"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/register_login"
+        app:layout_constraintEnd_toStartOf="@+id/registerLogin"
         app:layout_constraintHorizontal_bias="0.889"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/google"
@@ -197,7 +197,7 @@
         app:layout_constraintVertical_bias="0.4" />
 
     <TextView
-        android:id="@+id/register_login"
+        android:id="@+id/registerLogin"
         android:layout_width="69dp"
         android:layout_height="19dp"
         android:layout_marginEnd="84dp"
@@ -217,9 +217,9 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName2"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toBottomOf="@+id/userName"
+        app:layout_constraintStart_toStartOf="@+id/userName"
+        app:layout_constraintTop_toTopOf="@+id/userName"
         app:srcCompat="@drawable/baseline_account_box_24" />
 
     <ImageView
@@ -228,9 +228,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="12dp"
         android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextEmailAddress"
+        app:layout_constraintBottom_toBottomOf="@+id/userEmail"
+        app:layout_constraintStart_toStartOf="@+id/userEmail"
+        app:layout_constraintTop_toTopOf="@+id/userEmail"
         app:srcCompat="@drawable/baseline_email_24" />
 
     <ImageView
@@ -240,9 +240,9 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="12dp"
         android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/password"
+        app:layout_constraintStart_toStartOf="@+id/password"
+        app:layout_constraintTop_toTopOf="@+id/password"
         app:layout_constraintVertical_bias="0.615"
         app:srcCompat="@drawable/baseline_password_24" />
 
@@ -253,9 +253,9 @@
         android:layout_marginStart="12dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPassword2"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPassword2"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPassword2"
+        app:layout_constraintBottom_toBottomOf="@+id/cnfpassword"
+        app:layout_constraintStart_toStartOf="@+id/cnfpassword"
+        app:layout_constraintTop_toTopOf="@+id/cnfpassword"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/baseline_password_24" />
 

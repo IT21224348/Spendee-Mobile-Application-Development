@@ -28,7 +28,13 @@
     <string name="lented_person_name">Dulhan</string>
     <string name="page_name">Loans</string>
 
-
+      //SignUp page
+    <string name="error_username_empty">Please enter username</string>
+    <string name="error_email_empty">Please enter email</string>
+    <string name="error_pwd_empty">Please enter password</string>
+    <string name="error_pwd_not_match">Passwords do not match</string>
+    <string name="error_pwd_less_characters">Password should be at least 6 characters</string>
+    <string name="error_email_format">"We're sorry, but the email address you provided is not in the correct format. Please double-check your email address and ensure that it follows the standard format of </string>
 
 
 
