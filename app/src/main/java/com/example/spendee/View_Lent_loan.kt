@@ -6,85 +6,53 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
+import com.example.spendee.databinding.ActivityAddLoanBinding
+import com.example.spendee.databinding.ActivityViewLentloanBinding
 
 class View_Lent_loan : AppCompatActivity() {
+    private lateinit var binding: ActivityViewLentloanBinding
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_view_lentloan)
+        //Initialize the binding
+        binding = ActivityViewLentloanBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        val borrowed: TextView = findViewById(R.id.borrowed)
-        val lent: TextView = findViewById(R.id.lent)
-        val addloan: Button = findViewById(R.id.Loan_btn)
-        val update_loan: ImageButton = findViewById(R.id.update_borrowed_btn)
-        val profile_btn: ImageButton = findViewById(R.id.profile_btn)
+        //Set up navigation bar
+        binding.homeBtn.setOnClickListener {
 
-        //navigation bar
-        val home_btn: ImageButton = findViewById(R.id.home_btn)
-        val transaction_btn2: ImageButton = findViewById(R.id.transaction_btn_nav)
-        val target_btn: ImageButton = findViewById(R.id.target_btn_transaction)
-        val bill_btn: ImageButton = findViewById(R.id.bill_btn)
-        val loan_btn: ImageButton = findViewById(R.id.loan_btn)
-
-
-        //Borowed Loan
-        borrowed.setOnClickListener {
-            val intent = Intent(this,View_Borrowed_loan::class.java)
-            startActivity(intent)
-        }
-
-        //Lented Loan
-        lent.setOnClickListener{
-            val intent = Intent(this,View_Lent_loan::class.java)
-            startActivity(intent)
-        }
-
-        //Add Loan
-        addloan.setOnClickListener {
-            val intent = Intent(this,Add_Loan::class.java)
-            startActivity(intent)
-        }
-
-        //Update Loan
-        update_loan.setOnClickListener {
-            val intent = Intent(this,Update_loan::class.java)
-            startActivity(intent)
-        }
-
-        //Profile Button
-        profile_btn.setOnClickListener {
-            val intent = Intent(this,Profile::class.java)
-            startActivity(intent)
-        }
-
-        //Navigation Bar
-
-        //Home button
-        home_btn.setOnClickListener {
             val intent = Intent(this,Home::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
 
-        //Transaction Button
-        transaction_btn2.setOnClickListener {
+        binding.transactionBtnNav.setOnClickListener {
             val intent = Intent(this,Transaction::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
 
-        //Target Button
-        target_btn.setOnClickListener {
+        binding.targetBtnTransaction.setOnClickListener {
             val intent = Intent(this,Goal::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
 
-        //Bill Button
-        bill_btn.setOnClickListener {
+        binding.billBtn.setOnClickListener {
             val intent = Intent(this,View_bills::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
 
-        //Loan Button
-        loan_btn.setOnClickListener {
-            val intent = Intent(this,View_Borrowed_loan::class.java)
+        binding.loanBtn.setOnClickListener {
+            val intent = Intent(this, Main_Loan::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
+            startActivity(intent)
+        }
+
+        // Attach a click listener to the "Add loan" button using view binding
+        binding.addLoan.setOnClickListener {
+            val intent = Intent(this,Add_Loan::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
     }
