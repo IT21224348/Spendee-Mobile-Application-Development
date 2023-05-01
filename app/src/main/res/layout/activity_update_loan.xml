@@ -233,7 +233,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton51"
+        android:id="@+id/loan_Btn"
         android:layout_width="@dimen/Footer_icon_width"
         android:layout_height="@dimen/Footer_icon_height"
         android:layout_marginStart="25dp"

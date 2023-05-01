@@ -66,7 +66,7 @@
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="Goal Name"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintStart_toStartOf="@+id/view7"
@@ -76,13 +76,14 @@
         android:id="@+id/loanAmount"
         android:layout_width="320dp"
         android:layout_height="48dp"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="Target Time"
-        android:inputType="date|number"
+        android:inputType="date"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.6"
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/loanName" />
 
@@ -94,7 +95,7 @@
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="Target Value"
-        android:inputType="date"
+        android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintHorizontal_bias="0.477"
@@ -109,7 +110,7 @@
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="Balance you have"
-        android:inputType="date|textPersonName"
+        android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintHorizontal_bias="0.519"
@@ -227,7 +228,7 @@
         app:srcCompat="@drawable/baseline_account_circl24" />
 
     <ImageButton
-        android:id="@+id/imageButton41"
+        android:id="@+id/pickerDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"

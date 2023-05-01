@@ -231,7 +231,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton12"
+        android:id="@+id/pickerDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -244,7 +244,7 @@
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton10"
+        android:id="@+id/loan_Btn"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="26dp"

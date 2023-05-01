@@ -67,7 +67,7 @@
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="Bill name"
-        android:inputType="textPersonName"
+        android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintHorizontal_bias="0.515"
@@ -217,7 +217,7 @@
         app:srcCompat="@drawable/baseline_account_circl24" />
 
     <ImageButton
-        android:id="@+id/imageButton37"
+        android:id="@+id/pickerDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"

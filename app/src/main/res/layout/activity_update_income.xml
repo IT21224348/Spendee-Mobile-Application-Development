@@ -186,7 +186,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton12"
+        android:id="@+id/pickerDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -199,20 +199,20 @@
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton16"
+        android:id="@+id/targetBtnTransaction"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="26dp"
         android:layout_marginTop="3dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/imageButton18"
+        app:layout_constraintStart_toEndOf="@+id/transactionBtnNav"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:layout_constraintVertical_bias="0.444"
         app:srcCompat="@drawable/target"
         tools:ignore="SpeakableTextPresentCheck,SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton17"
+        android:id="@+id/home_btn"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="20dp"
@@ -225,37 +225,37 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton18"
+        android:id="@+id/transactionBtnNav"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="25dp"
         android:layout_marginTop="3dp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
-        app:layout_constraintStart_toEndOf="@+id/imageButton17"
+        app:layout_constraintStart_toEndOf="@+id/home_btn"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:srcCompat="@drawable/transaction"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton20"
+        android:id="@+id/billBtn"
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginStart="26dp"
         android:layout_marginTop="3dp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
-        app:layout_constraintStart_toEndOf="@+id/imageButton16"
+        app:layout_constraintStart_toEndOf="@+id/targetBtnTransaction"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:layout_constraintVertical_bias="0.545"
         app:srcCompat="@drawable/bill"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton35"
+        android:id="@+id/loanBtn"
         android:layout_width="50dp"
         android:layout_height="48dp"
         android:layout_marginStart="25dp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
-        app:layout_constraintStart_toEndOf="@+id/imageButton20"
+        app:layout_constraintStart_toEndOf="@+id/billBtn"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:srcCompat="@drawable/loan1" />
 

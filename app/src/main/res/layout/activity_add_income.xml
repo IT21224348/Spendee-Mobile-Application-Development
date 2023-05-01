@@ -68,6 +68,7 @@
         android:inputType="number"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
@@ -79,7 +80,7 @@
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="Description"
-        android:inputType="number|text"
+        android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintStart_toStartOf="@+id/view7"
@@ -91,18 +92,15 @@
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
-        android:layout_marginBottom="152dp"
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="Date "
-        android:inputType="date|textPersonName"
+        android:inputType="date"
         android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="@+id/view7"
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintHorizontal_bias="0.612"
         app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/view6"
-        app:layout_constraintVertical_bias="0.34" />
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
 
     <Button
         android:id="@+id/button6"
@@ -231,7 +229,7 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton12"
+        android:id="@+id/pickerDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="4dp"
@@ -256,7 +254,7 @@
         app:srcCompat="@drawable/baseline_account_circl24" />
 
     <ImageView
-        android:id="@+id/imageView2"
+        android:id="@+id/loan_Btn"
         android:layout_width="33dp"
         android:layout_height="44dp"
         android:layout_marginStart="25dp"
