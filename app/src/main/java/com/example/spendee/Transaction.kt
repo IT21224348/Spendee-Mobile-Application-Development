@@ -5,57 +5,50 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import com.example.spendee.databinding.ActivityTransactionBinding
 
 class Transaction : AppCompatActivity() {
+    private lateinit var binding: ActivityTransactionBinding
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_transaction)
 
-        val update_trasaction: ImageButton = findViewById(R.id.update_trasaction_btn)
+        //Initialize the binding
+        binding = ActivityTransactionBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        //navigation bar
-        val home_btn:ImageButton = findViewById(R.id.home_btn)
-        val transaction_btn2:ImageButton = findViewById(R.id.transaction_btn_nav)
-        val target_btn:ImageButton = findViewById(R.id.target_btn_transaction)
-        val bill_btn:ImageButton = findViewById(R.id.bill_btn)
-        val loan_btn:ImageButton = findViewById(R.id.loan_btn)
+        //Set up navigation bar
+        binding.homeBtn.setOnClickListener {
 
-        update_trasaction.setOnClickListener {
-            val intent = Intent(this,Update_income::class.java)
-            startActivity(intent)
-        }
-
-        //Navigation Bar
-
-        //Home button
-        home_btn.setOnClickListener {
             val intent = Intent(this,Home::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
 
-        //Transaction Button
-        transaction_btn2.setOnClickListener {
+        binding.transactionBtnNav.setOnClickListener {
             val intent = Intent(this,Transaction::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
 
-        //Target Button
-        target_btn.setOnClickListener {
+        binding.targetBtnTransaction.setOnClickListener {
             val intent = Intent(this,Goal::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
 
-        //Bill Button
-        bill_btn.setOnClickListener {
+        binding.billBtn.setOnClickListener {
             val intent = Intent(this,View_bills::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
 
-        //Loan Button
-        loan_btn.setOnClickListener {
-            val intent = Intent(this,View_Borrowed_loan::class.java)
+        binding.loanBtn.setOnClickListener {
+            val intent = Intent(this, Main_Loan::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
+
+
     }
 }
