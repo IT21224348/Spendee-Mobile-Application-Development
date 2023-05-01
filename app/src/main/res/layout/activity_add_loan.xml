@@ -35,8 +35,8 @@
 
     <View
         android:id="@+id/view7"
-        android:layout_width="365dp"
-        android:layout_height="528dp"
+        android:layout_width="354dp"
+        android:layout_height="527dp"
         android:background="@drawable/custom_view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -60,10 +60,10 @@
         app:layout_constraintTop_toTopOf="@+id/view7" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName8"
+        android:id="@+id/loanName"
         android:layout_width="@dimen/Input_box_width"
         android:layout_height="@dimen/Input_box_height"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="@string/loan_name"
@@ -73,11 +73,12 @@
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
+
     <EditText
-        android:id="@+id/editTextTextPersonName9"
+        android:id="@+id/loanAmount"
         android:layout_width="@dimen/Input_box_width"
         android:layout_height="@dimen/Input_box_height"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="@string/loan_amount"
@@ -85,44 +86,41 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
+        app:layout_constraintTop_toBottomOf="@+id/loanName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName10"
+        android:id="@+id/loanDate"
         android:layout_width="@dimen/Input_box_width"
         android:layout_height="@dimen/Input_box_height"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="@string/loan_borrowed_date"
         android:inputType="date"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
-        app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+        app:layout_constraintTop_toBottomOf="@+id/loanAmount" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName11"
+        android:id="@+id/loanSettle"
         android:layout_width="@dimen/Input_box_width"
         android:layout_height="@dimen/Input_box_height"
-        android:layout_marginTop="24dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="@string/dates_to_be_settled"
-        android:inputType="date|textPersonName"
+        android:inputType="date"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
-        app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10" />
-
+        app:layout_constraintTop_toBottomOf="@+id/loanDate" />
 
     <Button
         android:id="@+id/button6"
         android:layout_width="@dimen/CRUD_BTN_width"
         android:layout_height="@dimen/CRUD_BTN_height"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="28dp"
         android:background="@drawable/crud_button"
         android:text="@string/crud_add"
         android:textAlignment="center"
@@ -131,11 +129,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view7"
         app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11"
-        app:layout_constraintVertical_bias="0.847" />
+        app:layout_constraintTop_toBottomOf="@+id/loanSettle"
+        app:layout_constraintVertical_bias="0.826" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/cancleBTN"
         android:layout_width="@dimen/CRUD_BTN_width"
         android:layout_height="@dimen/CRUD_BTN_height"
         android:layout_marginEnd="28dp"
@@ -147,7 +145,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view7"
         app:layout_constraintEnd_toEndOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11"
+        app:layout_constraintTop_toBottomOf="@+id/loanSettle"
         app:layout_constraintVertical_bias="0.824" />
 
     <androidx.appcompat.widget.Toolbar
@@ -206,36 +204,39 @@
         app:srcCompat="@drawable/bill" />
 
 
-    <LinearLayout
+    <RadioGroup
         android:id="@+id/linearLayout"
-        android:layout_width="310dp"
-        android:layout_height="67dp"
+        android:layout_width="185dp"
+        android:layout_height="86dp"
         android:layout_marginTop="12dp"
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName11">
+        app:layout_constraintTop_toBottomOf="@+id/loanSettle">
 
         <RadioButton
-            android:id="@+id/radioButton3"
-            android:layout_width="@dimen/CheckBox_width"
-            android:layout_height="@dimen/CheckBox_height"
-            android:checked="true"
+            android:id="@+id/radioButton2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:minHeight="48dp"
             android:text="@string/check_box_borrowed"
             android:textAlignment="center"
-            android:textColor="#050505"
+            android:textColor="#020202"
             android:textSize="16sp" />
 
         <RadioButton
-            android:id="@+id/radioButton5"
-            android:layout_width="@dimen/CheckBox_width"
-            android:layout_height="@dimen/CheckBox_height"
+            android:id="@+id/radioButton3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:minHeight="48dp"
             android:text="@string/Check_box_lent"
             android:textAlignment="center"
             android:textColor="#020202"
             android:textSize="16sp" />
 
-    </LinearLayout>
+
+    </RadioGroup>
 
     <ImageButton
         android:id="@+id/imageButton42"
@@ -253,35 +254,35 @@
         app:srcCompat="@drawable/baseline_account_circl24" />
 
     <ImageButton
-        android:id="@+id/imageButton43"
+        android:id="@+id/pickerDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:backgroundTint="#FEFEFE"
         android:contentDescription="@string/select_date"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName10"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName10"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName10"
+        app:layout_constraintBottom_toBottomOf="@+id/loanDate"
+        app:layout_constraintStart_toStartOf="@+id/loanDate"
+        app:layout_constraintTop_toTopOf="@+id/loanDate"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/baseline_calendar_month_24"
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton44"
+        android:id="@+id/pickerDate1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:backgroundTint="#FEFEFE"
         android:contentDescription="@string/select_date"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName11"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName11"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName11"
+        app:layout_constraintBottom_toBottomOf="@+id/loanSettle"
+        app:layout_constraintStart_toStartOf="@+id/loanSettle"
+        app:layout_constraintTop_toTopOf="@+id/loanSettle"
         app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/baseline_calendar_month_24"
         tools:ignore="TouchTargetSizeCheck" />
 
     <ImageButton
-        android:id="@+id/imageButton62"
+        android:id="@+id/loanBtn"
         android:layout_width="@dimen/Footer_icon_width"
         android:layout_height="@dimen/Footer_icon_height"
         android:layout_marginStart="25dp"
@@ -290,5 +291,12 @@
         app:layout_constraintStart_toEndOf="@+id/bill_btn"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:srcCompat="@drawable/loan1" />
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

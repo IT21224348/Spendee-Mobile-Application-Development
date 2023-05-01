@@ -60,7 +60,7 @@
         app:layout_constraintTop_toTopOf="@+id/view7" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName8"
+        android:id="@+id/loanName"
         android:layout_width="@dimen/Input_box_width"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName9"
+        android:id="@+id/loanAmount"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
@@ -86,10 +86,10 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
+        app:layout_constraintTop_toBottomOf="@+id/loanName" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName10"
+        android:id="@+id/loanDate"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
@@ -101,7 +101,7 @@
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintHorizontal_bias="0.477"
         app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName9" />
+        app:layout_constraintTop_toBottomOf="@+id/loanAmount" />
 
 
     <Button
@@ -118,11 +118,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view7"
         app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10"
+        app:layout_constraintTop_toBottomOf="@+id/loanDate"
         app:layout_constraintVertical_bias="0.904" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/cancleBTN"
         android:layout_width="115dp"
         android:layout_height="50dp"
         android:layout_marginEnd="36dp"
@@ -135,7 +135,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view7"
         app:layout_constraintEnd_toEndOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName10"
+        app:layout_constraintTop_toBottomOf="@+id/loanDate"
         app:layout_constraintVertical_bias="1.0" />
 
     <androidx.appcompat.widget.Toolbar
@@ -222,9 +222,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:backgroundTint="#FEFEFE"
-        app:layout_constraintBottom_toBottomOf="@+id/editTextTextPersonName10"
-        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName10"
-        app:layout_constraintTop_toTopOf="@+id/editTextTextPersonName10"
+        app:layout_constraintBottom_toBottomOf="@+id/loanDate"
+        app:layout_constraintStart_toStartOf="@+id/loanDate"
+        app:layout_constraintTop_toTopOf="@+id/loanDate"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/baseline_calendar_month_24" />
 

@@ -60,7 +60,7 @@
         app:layout_constraintTop_toTopOf="@+id/view7" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName8"
+        android:id="@+id/loanName"
         android:layout_width="320dp"
         android:layout_height="50dp"
         android:layout_marginTop="32dp"
@@ -74,7 +74,7 @@
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName9"
+        android:id="@+id/loanAmount"
         android:layout_width="320dp"
         android:layout_height="48dp"
         android:layout_marginTop="24dp"
@@ -85,7 +85,7 @@
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName8" />
+        app:layout_constraintTop_toBottomOf="@+id/loanName" />
 
 
     <Button
@@ -104,7 +104,7 @@
         app:layout_constraintStart_toStartOf="@+id/view7" />
 
     <Button
-        android:id="@+id/button7"
+        android:id="@+id/cancleBTN"
         android:layout_width="115dp"
         android:layout_height="50dp"
         android:layout_marginEnd="28dp"
