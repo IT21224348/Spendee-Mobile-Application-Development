@@ -30,6 +30,7 @@ class Signup : AppCompatActivity() {
         binding = SignupBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //Get a instance of the firebase authentication
         auth = Firebase.auth
 
         // Attach a click listener to the "Sign Up" button using view binding
@@ -77,6 +78,7 @@ class Signup : AppCompatActivity() {
         // Attach a click listener to the "Sign in" text using view binding
         binding.registerLogin.setOnClickListener{
             val intent = Intent(this,Login::class.java)
+            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
 
@@ -135,9 +137,6 @@ class Signup : AppCompatActivity() {
             return false
 
         }
-
-
-
 
         //All fields are non empty
         return true
