@@ -115,7 +115,7 @@
         app:layout_constraintTop_toBottomOf="@+id/loanDate" />
 
     <Button
-        android:id="@+id/button6"
+        android:id="@+id/AddLoan"
         android:layout_width="@dimen/CRUD_BTN_width"
         android:layout_height="@dimen/CRUD_BTN_height"
         android:layout_marginStart="28dp"
