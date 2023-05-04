@@ -35,56 +35,94 @@
 
     <View
         android:id="@+id/view7"
-        android:layout_width="354dp"
-        android:layout_height="527dp"
+        android:layout_width="329dp"
+        android:layout_height="514dp"
         android:background="@drawable/custom_view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.51"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.067" />
+        app:layout_constraintVertical_bias="0.252" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="@dimen/CRUD_BTN_width"
+        android:layout_height="@dimen/CRUD_BTN_height"
+        android:background="@drawable/crud_button"
+        android:text="Delete"
+        android:onClick="Delete_Data"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="@dimen/CRUB_BTN_textsize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/updateBtn"
+        app:layout_constraintTop_toBottomOf="@+id/loanSettle"
+        app:layout_constraintVertical_bias="0.956"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="@dimen/CRUD_BTN_width"
+        android:layout_height="@dimen/CRUD_BTN_height"
+        android:layout_marginStart="28dp"
+        android:background="@drawable/crud_button"
+        android:text="Update"
+        android:onClick="Update_date"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="@dimen/CRUB_BTN_textsize"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view7"
+        app:layout_constraintStart_toStartOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/loanSettle"
+        app:layout_constraintVertical_bias="0.961"
+        android:visibility="gone"/>
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="8dp"
         android:text="Add a Loan"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="@dimen/CRUD_topic"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toTopOf="@+id/view7" />
+
 
     <EditText
         android:id="@+id/loanName"
         android:layout_width="@dimen/Input_box_width"
         android:layout_height="@dimen/Input_box_height"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="@string/loan_name"
         android:inputType="textPersonName"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
-
 
     <EditText
         android:id="@+id/loanAmount"
         android:layout_width="@dimen/Input_box_width"
         android:layout_height="@dimen/Input_box_height"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="@string/loan_amount"
         android:inputType="numberDecimal"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/loanName" />
 
@@ -92,13 +130,14 @@
         android:id="@+id/loanDate"
         android:layout_width="@dimen/Input_box_width"
         android:layout_height="@dimen/Input_box_height"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="@string/loan_borrowed_date"
         android:inputType="date"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/loanAmount" />
 
@@ -106,13 +145,14 @@
         android:id="@+id/loanSettle"
         android:layout_width="@dimen/Input_box_width"
         android:layout_height="@dimen/Input_box_height"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="28dp"
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="@string/dates_to_be_settled"
         android:inputType="date"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintHorizontal_bias="0.444"
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/loanDate" />
 
@@ -130,13 +170,13 @@
         app:layout_constraintBottom_toBottomOf="@+id/view7"
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/loanSettle"
-        app:layout_constraintVertical_bias="0.826" />
+        app:layout_constraintVertical_bias="0.421" />
 
     <Button
         android:id="@+id/cancleBTN"
         android:layout_width="@dimen/CRUD_BTN_width"
         android:layout_height="@dimen/CRUD_BTN_height"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="32dp"
         android:background="@drawable/crud_button"
         android:text="@string/crud_cancle"
         android:textAlignment="center"
@@ -146,7 +186,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/view7"
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/loanSettle"
-        app:layout_constraintVertical_bias="0.824" />
+        app:layout_constraintVertical_bias="0.421" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -204,55 +244,6 @@
         app:srcCompat="@drawable/bill" />
 
 
-    <RadioGroup
-        android:id="@+id/LoanType"
-        android:layout_width="185dp"
-        android:layout_height="86dp"
-        android:layout_marginTop="12dp"
-        app:layout_constraintEnd_toEndOf="@+id/view7"
-        app:layout_constraintStart_toStartOf="@+id/view7"
-        app:layout_constraintTop_toBottomOf="@+id/loanSettle">
-
-        <RadioButton
-            android:id="@+id/borrowed_loan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:minHeight="48dp"
-            android:text="@string/check_box_borrowed"
-            android:textAlignment="center"
-            android:textColor="#020202"
-            android:textSize="16sp" />
-
-        <RadioButton
-            android:id="@+id/lented_loan"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:minHeight="48dp"
-            android:text="@string/Check_box_lent"
-            android:textAlignment="center"
-            android:textColor="#020202"
-            android:textSize="16sp" />
-
-
-    </RadioGroup>
-
-    <ImageButton
-        android:id="@+id/imageButton42"
-        android:layout_width="@dimen/User_icon_width"
-        android:layout_height="@dimen/User_icon_height"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#003086"
-        android:contentDescription="@string/select_date"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.062"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/baseline_account_circl24" />
-
     <ImageButton
         android:id="@+id/pickerDate"
         android:layout_width="wrap_content"
@@ -297,6 +288,37 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view9"
+        android:layout_width="390dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="387dp"
+        android:layout_height="39dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/view9"
+        app:layout_constraintStart_toStartOf="@+id/view9"
+        app:layout_constraintTop_toTopOf="@+id/view9" >
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Loan List"
+            android:onClick="showlist"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

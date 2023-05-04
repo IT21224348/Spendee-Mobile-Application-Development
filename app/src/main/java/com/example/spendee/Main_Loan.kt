@@ -3,6 +3,7 @@ package com.example.spendee
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.View
 import com.example.spendee.databinding.ActivityAddLoanBinding
 import com.example.spendee.databinding.ActivityViewMainLoanBinding
 
@@ -51,5 +52,8 @@ class Main_Loan : AppCompatActivity() {
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
+
+
     }
+
 }

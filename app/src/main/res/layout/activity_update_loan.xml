@@ -123,6 +123,7 @@
         android:text="@string/update_btn"
         android:textAlignment="center"
         android:textColor="#020202"
+        android:onClick="updateloan"
         android:textSize="@dimen/CRUB_BTN_textsize"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/view7"
@@ -265,17 +266,6 @@
         app:layout_constraintTop_toTopOf="@+id/loanSettle"
         app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/baseline_calendar_month_24" />
-
-    <ImageButton
-        android:id="@+id/imageButton61"
-        android:layout_width="@dimen/User_icon_width"
-        android:layout_height="@dimen/User_icon_height"
-        android:backgroundTint="#003086"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/baseline_account_circl24" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

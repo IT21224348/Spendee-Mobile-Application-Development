@@ -4,13 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:textAlignment="center"
     tools:context=".View_Borrowed_loan">
 
 
     <ImageView
         android:id="@+id/imageView7"
-        android:layout_width="392dp"
-        android:layout_height="174dp"
+        android:layout_width="413dp"
+        android:layout_height="184dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,47 +33,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView7"
         app:layout_constraintVertical_bias="0.135" />
-
-    <View
-        android:id="@+id/view5"
-        android:layout_width="410dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="72dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <TextView
-        android:id="@+id/borrowed"
-        android:layout_width="205dp"
-        android:layout_height="50dp"
-        android:clickable="true"
-        android:text="Borrowed"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textIsSelectable="true"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/view5"
-        app:layout_constraintStart_toStartOf="@+id/view5"
-        app:layout_constraintTop_toTopOf="@+id/view5"
-        app:layout_constraintVertical_bias="1.0"
-        tools:ignore="DuplicateClickableBoundsCheck" />
-
-    <TextView
-        android:id="@+id/lent"
-        android:layout_width="205dp"
-        android:layout_height="50dp"
-        android:clickable="true"
-        android:text="Lent"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/view5"
-        app:layout_constraintEnd_toEndOf="@+id/view5"
-        app:layout_constraintTop_toTopOf="@+id/view5" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -132,55 +92,16 @@
 
     <Button
         android:id="@+id/add_loan"
-        android:layout_width="94dp"
+        android:layout_width="310dp"
         android:layout_height="63dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="104dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/signup_btn_custom"
         android:text="@string/add_loan"
         android:textColor="#FEFEFE"
         app:layout_constraintBottom_toTopOf="@+id/toolbar2"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-    <View
-        android:id="@+id/view10"
-        android:layout_width="396dp"
-        android:layout_height="69dp"
-        android:layout_marginBottom="16dp"
-        android:background="@drawable/crud_input"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView35"
-        android:layout_width="240dp"
-        android:layout_height="42dp"
-        android:text="Total Borrowed :"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/view10"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view10" />
-
-    <TextView
-        android:id="@+id/textView36"
-        android:layout_width="132dp"
-        android:layout_height="40dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginBottom="28dp"
-        android:text="Rs.35000.00"
-        android:textAlignment="center"
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
-        app:layout_constraintEnd_toEndOf="@+id/view10"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView35" />
 
     <ImageButton
         android:id="@+id/loan_btn"
@@ -194,27 +115,28 @@
         app:srcCompat="@drawable/loan1"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
-        android:id="@+id/profile_btn"
-        android:layout_width="@dimen/User_icon_width"
-        android:layout_height="@dimen/User_icon_height"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#003086"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/baseline_account_circl24"
-        tools:ignore="SpeakableTextPresentCheck" />
-
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/borrowed_loan_list"
-        android:layout_width="390dp"
-        android:layout_height="365dp"
+        android:layout_width="385dp"
+        android:layout_height="383dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/add_loan"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5" />
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="226dp"
+        android:layout_height="37dp"
+        android:layout_marginBottom="12dp"
+        android:text="Borrowed Loans"
+        android:textAlignment="center"
+        android:textColor="#040404"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/borrowed_loan_list"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
