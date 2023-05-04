@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "266301282108",
+    "project_id": "spendee-419fe",
+    "storage_bucket": "spendee-419fe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:266301282108:android:a2a7a091564838a746f039",
+        "android_client_info": {
+          "package_name": "com.example.spendee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "266301282108-fl9khfn4ljh89c7vlcjhsu5ur6o9ag2c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.spendee",
+            "certificate_hash": "383e1c0d5f961b80dc89bd10c9803176d7191c7b"
+          }
+        },
+        {
+          "client_id": "266301282108-gkbve1p094u1jldmrjvprhnm0rtgv7fk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKiIt-Nr5XHAPmodVU5yRoCXZ4xov0CIU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "266301282108-gkbve1p094u1jldmrjvprhnm0rtgv7fk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
