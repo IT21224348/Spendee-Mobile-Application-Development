@@ -102,103 +102,30 @@
         app:srcCompat="@drawable/loan1"
         tools:ignore="SpeakableTextPresentCheck" />
 
-    <ImageButton
-        android:id="@+id/add_income"
-        android:layout_width="52dp"
-        android:layout_height="49dp"
-        android:layout_marginEnd="12dp"
-        android:backgroundTint="#FEFEFE"
-        app:layout_constraintBottom_toBottomOf="@+id/textView39"
-        app:layout_constraintEnd_toStartOf="@+id/add_expences"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.888"
-        app:srcCompat="@drawable/plus"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/add_expences"
-        android:layout_width="52dp"
-        android:layout_height="49dp"
-        android:layout_marginEnd="16dp"
-        android:backgroundTint="#FEFEFE"
-        app:layout_constraintBottom_toBottomOf="@+id/textView39"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="0.888"
-        app:srcCompat="@drawable/minus"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/transaction_btn"
-        android:layout_width="68dp"
-        android:layout_height="51dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#FEFEFE"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:srcCompat="@drawable/wallet"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/textView39"
-        android:layout_width="141dp"
-        android:layout_height="53dp"
-        android:layout_marginStart="12dp"
+    <Button
+        android:id="@+id/income"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="340dp"
         android:background="@drawable/signup_btn_custom"
-        android:text="Rs,5042.00"
-        android:textAlignment="center"
+        android:text="Add Incomes"
         android:textColor="#FEFEFE"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/transaction_btn"
-        app:layout_constraintStart_toEndOf="@+id/transaction_btn"
-        app:layout_constraintTop_toBottomOf="@+id/imageView5"
-        app:layout_constraintVertical_bias="1.0" />
-
-    <ImageButton
-        android:id="@+id/profile_btn"
-        android:layout_width="82dp"
-        android:layout_height="78dp"
-        android:backgroundTint="#003086"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/baseline_account_circl24"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <TextView
-        android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="You have logged succesfully"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.475"
+        app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.451" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
-    <TextView
-        android:id="@+id/Email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="Email"
+    <Button
+        android:id="@+id/expense"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="420dp"
+        android:background="@drawable/signup_btn_custom"
+        android:text="Add Expenses"
+        android:textColor="#FEFEFE"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.456"
+        app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView6" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
-    <TextView
-        android:id="@+id/uid"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="User Id"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.45"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/Email" />
 </androidx.constraintlayout.widget.ConstraintLayout>
