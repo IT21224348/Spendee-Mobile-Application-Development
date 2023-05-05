@@ -41,13 +41,13 @@ class Add_Loan : AppCompatActivity() {
         }
 
         binding.targetBtnTransaction.setOnClickListener {
-            val intent = Intent(this, Goal::class.java)
+            val intent = Intent(this, MainGoal::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
 
         binding.billBtn.setOnClickListener {
-            val intent = Intent(this, View_bills::class.java)
+            val intent = Intent(this, Main_Bill::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
@@ -245,6 +245,17 @@ class Add_Loan : AppCompatActivity() {
             val userId = FirebaseAuth.getInstance().currentUser?.uid
             if(userId!=null) {
                 database.child(userId).child(nodeId).removeValue().addOnSuccessListener {
+
+                    binding.loanName.text.clear()
+                    binding.loanAmount.text.clear()
+                    binding.loanDate.text.clear()
+                    binding.loanSettle.text.clear()
+                    binding.updateBtn.visibility = View.INVISIBLE
+                    binding.deleteBtn.visibility = View.INVISIBLE
+                    binding.AddLoan.visibility = View.VISIBLE
+                    binding.cancleBTN.visibility = View.VISIBLE
+
+
                     Toast.makeText(this, "Loan Deleted", Toast.LENGTH_SHORT).show()
                 }.addOnFailureListener {
                     Toast.makeText(this, "Failed", Toast.LENGTH_SHORT).show()

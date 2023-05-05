@@ -12,13 +12,13 @@
         android:background="@drawable/custom_view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.38"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.842" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/text"
         android:layout_width="155dp"
         android:layout_height="37dp"
         android:layout_marginStart="16dp"
@@ -36,63 +36,66 @@
         android:id="@+id/name"
         android:layout_width="113dp"
         android:layout_height="34dp"
-        android:text="Name"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="40dp"
+        android:text="PName"
         android:textAlignment="viewStart"
         android:textColor="#000000"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/view11"
         app:layout_constraintEnd_toEndOf="@+id/view11"
-        app:layout_constraintHorizontal_bias="0.046"
-        app:layout_constraintStart_toEndOf="@+id/textView12"
-        app:layout_constraintTop_toTopOf="@+id/view11"
-        app:layout_constraintVertical_bias="0.136" />
+        app:layout_constraintTop_toTopOf="@+id/view11" />
 
     <TextView
         android:id="@+id/textView49"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="12dp"
         android:text="Amount :"
         android:textColor="#000000"
         android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView54"
         app:layout_constraintStart_toStartOf="@+id/view11"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/amount"
         android:layout_width="106dp"
         android:layout_height="25dp"
-        android:layout_marginBottom="84dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="88dp"
         android:text="Amount"
         android:textAlignment="textStart"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/view11"
         app:layout_constraintEnd_toEndOf="@+id/view11"
-        app:layout_constraintHorizontal_bias="0.376"
-        app:layout_constraintStart_toEndOf="@+id/textView49" />
+        app:layout_constraintTop_toBottomOf="@+id/name"
+        app:layout_constraintVertical_bias="0.857" />
 
     <TextView
         android:id="@+id/textView54"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
-        android:layout_marginBottom="52dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginBottom="60dp"
         android:text="Date :"
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/view11"
-        app:layout_constraintStart_toStartOf="@+id/view11" />
+        app:layout_constraintStart_toStartOf="@+id/view11"
+        app:layout_constraintTop_toBottomOf="@+id/textView23"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/lDate"
         android:layout_width="94dp"
-        android:layout_height="21dp"
+        android:layout_height="25dp"
         android:layout_marginStart="12dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginBottom="60dp"
         android:text="Date"
         android:textAlignment="viewStart"
         android:textColor="#000000"
@@ -105,20 +108,20 @@
     <TextView
         android:id="@+id/textView57"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="48dp"
         android:text="Date to be Settled:"
         android:textColor="#000000"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/view11"
         app:layout_constraintStart_toStartOf="@+id/view11"
         app:layout_constraintTop_toBottomOf="@+id/textView54"
-        app:layout_constraintVertical_bias="0.28" />
+        app:layout_constraintVertical_bias="0.21" />
 
     <TextView
         android:id="@+id/setDate"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="25dp"
         android:layout_marginStart="4dp"
         android:layout_marginBottom="20dp"
         android:text="Settle Date"
@@ -128,28 +131,19 @@
         app:layout_constraintBottom_toBottomOf="@+id/view11"
         app:layout_constraintStart_toEndOf="@+id/textView57"
         app:layout_constraintTop_toBottomOf="@+id/lDate"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.444" />
 
     <TextView
         android:id="@+id/textView23"
         android:layout_width="23dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="4dp"
         android:text="Rs."
         android:textColor="#040404"
         android:textSize="16sp"
-        app:layout_constraintEnd_toStartOf="@+id/amount"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/textView49"
-        app:layout_constraintTop_toBottomOf="@+id/textView12" />
-
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toTopOf="@+id/amount"
-        app:layout_constraintStart_toEndOf="@+id/name"
-        app:layout_constraintTop_toTopOf="@+id/view11" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.468" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

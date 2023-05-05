@@ -5,7 +5,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
-
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -16,113 +15,80 @@
         android:theme="@style/Theme.Spendee"
         tools:targetApi="31">
         <activity
+            android:name=".Main_Bill"
+            android:exported="false" />
+        <activity
+            android:name=".MainGoal"
+            android:exported="false" />
+        <activity
+            android:name=".View_lent_loan"
+            android:exported="false" />
+        <activity
+            android:name=".View_Lented_loan"
+            android:exported="false" />
+        <activity
+            android:name=".View_lente_loan"
+            android:exported="false" />
+        <activity
+            android:name=".Add_Lent_Loan"
+            android:exported="false" />
+        <activity
             android:name=".Transaction"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Profile"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".View_Category"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Update_category"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Add_Category"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Home"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".View_bills"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Update_bill"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Update_income"
-            android:exported="true" >
-
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Update_expence"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Add_expences"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Add_income"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Main_Loan"
             android:exported="true" />
         <activity
             android:name=".Update_goal"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Add_bill"
-            android:exported="true">
-
-        </activity>
-        <activity
-            android:name=".View_Lent_loan"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".View_Borrowed_loan"
-            android:exported="true">
-
-
-        </activity>
-        <activity
-            android:name=".Update_loan"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Add_Loan"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Add_Goal"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Goal"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Login"
             android:exported="true">
@@ -131,14 +97,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
-
         </activity>
         <activity
             android:name=".Signup"
-            android:exported="true">
-
-        </activity>
+            android:exported="true" />
 
         <meta-data
             android:name="preloaded_fonts"

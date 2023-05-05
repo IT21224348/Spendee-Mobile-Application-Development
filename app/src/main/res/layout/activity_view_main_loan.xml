@@ -7,6 +7,19 @@
     tools:context=".Main_Loan">
 
 
+    <Button
+        android:id="@+id/add_loan2"
+        android:layout_width="340dp"
+        android:layout_height="53dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/signup_btn_custom"
+        android:text="Add Lent Loan"
+        android:textColor="#FEFEFE"
+        app:layout_constraintBottom_toTopOf="@+id/toolbar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.676"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <ImageView
         android:id="@+id/imageView7"
         android:layout_width="411dp"
@@ -41,7 +54,7 @@
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
@@ -92,13 +105,13 @@
         android:id="@+id/add_loan"
         android:layout_width="340dp"
         android:layout_height="53dp"
-        android:layout_marginBottom="44dp"
+        android:layout_marginBottom="88dp"
         android:background="@drawable/signup_btn_custom"
-        android:text="Add Loan"
+        android:text="Add Borrowed Loan"
         android:textColor="#FEFEFE"
         app:layout_constraintBottom_toTopOf="@+id/toolbar2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.676"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
@@ -148,30 +161,5 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24"
         app:layout_constraintVertical_bias="0.076" />
-
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="112dp"
-        android:checked="true"
-        app:layout_constraintBottom_toTopOf="@+id/add_loan"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView25"
-        app:layout_constraintVertical_bias="0.17"
-        tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
-
-    <TextView
-        android:id="@+id/textView26"
-        android:layout_width="142dp"
-        android:layout_height="36dp"
-        android:text="To mark as settled"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/add_loan"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.155"
-        app:layout_constraintStart_toEndOf="@+id/checkBox"
-        app:layout_constraintTop_toBottomOf="@+id/textView25"
-        app:layout_constraintVertical_bias="0.176" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

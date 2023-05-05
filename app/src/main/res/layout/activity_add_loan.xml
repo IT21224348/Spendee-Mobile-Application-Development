@@ -31,18 +31,18 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.123" />
+        app:layout_constraintVertical_bias="0.0" />
 
     <View
         android:id="@+id/view7"
-        android:layout_width="329dp"
-        android:layout_height="514dp"
+        android:layout_width="341dp"
+        android:layout_height="512dp"
         android:background="@drawable/custom_view"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.252" />
+        app:layout_constraintVertical_bias="0.095" />
 
     <Button
         android:id="@+id/deleteBtn"
@@ -100,14 +100,14 @@
         android:id="@+id/loanName"
         android:layout_width="@dimen/Input_box_width"
         android:layout_height="@dimen/Input_box_height"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="24dp"
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="@string/loan_name"
         android:inputType="textPersonName"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.476"
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
@@ -122,7 +122,6 @@
         android:inputType="numberDecimal"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
-        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/loanName" />
 
@@ -130,7 +129,7 @@
         android:id="@+id/loanDate"
         android:layout_width="@dimen/Input_box_width"
         android:layout_height="@dimen/Input_box_height"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="@string/loan_borrowed_date"
@@ -145,7 +144,7 @@
         android:id="@+id/loanSettle"
         android:layout_width="@dimen/Input_box_width"
         android:layout_height="@dimen/Input_box_height"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="@string/dates_to_be_settled"
@@ -160,7 +159,7 @@
         android:id="@+id/AddLoan"
         android:layout_width="@dimen/CRUD_BTN_width"
         android:layout_height="@dimen/CRUD_BTN_height"
-        android:layout_marginStart="28dp"
+        android:layout_marginStart="24dp"
         android:background="@drawable/crud_button"
         android:text="@string/crud_add"
         android:textAlignment="center"
@@ -170,7 +169,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/view7"
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/loanSettle"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintVertical_bias="0.338" />
 
     <Button
         android:id="@+id/cancleBTN"
@@ -186,7 +185,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/view7"
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/loanSettle"
-        app:layout_constraintVertical_bias="0.421" />
+        app:layout_constraintVertical_bias="0.338" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -268,7 +267,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/loanSettle"
         app:layout_constraintStart_toStartOf="@+id/loanSettle"
         app:layout_constraintTop_toTopOf="@+id/loanSettle"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/baseline_calendar_month_24"
         tools:ignore="TouchTargetSizeCheck" />
 
@@ -292,31 +291,30 @@
     <View
         android:id="@+id/view9"
         android:layout_width="390dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="72dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="387dp"
-        android:layout_height="39dp"
+        android:layout_width="392dp"
+        android:layout_height="46dp"
+        android:layout_marginBottom="4dp"
         android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="@+id/view9"
-        app:layout_constraintStart_toStartOf="@+id/view9"
-        app:layout_constraintTop_toTopOf="@+id/view9" >
+        app:layout_constraintBottom_toTopOf="@+id/view7"
+        app:layout_constraintEnd_toEndOf="@+id/view9"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/view9" >
 
         <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Loan List"
             android:onClick="showlist"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
+            android:text="Borrowed Loan List"
             tools:ignore="TouchTargetSizeCheck" />
     </LinearLayout>
 
