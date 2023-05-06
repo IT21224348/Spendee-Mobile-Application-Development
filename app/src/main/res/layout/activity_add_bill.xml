@@ -28,28 +28,46 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="@+id/imageView7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.8"
+        app:layout_constraintHorizontal_bias="0.648"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/imageView7"
         app:layout_constraintVertical_bias="0.142" />
 
     <View
         android:id="@+id/view7"
-        android:layout_width="353dp"
-        android:layout_height="421dp"
+        android:layout_width="345dp"
+        android:layout_height="431dp"
+        android:layout_marginTop="32dp"
         android:background="@drawable/custom_view"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.431"
+        app:layout_constraintHorizontal_bias="0.533"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7"
-        app:layout_constraintVertical_bias="0.053" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="115dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/crud_button"
+        android:text="Delete"
+        android:onClick="Delete_Data"
+        android:visibility="gone"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view7"
+        app:layout_constraintEnd_toEndOf="@+id/view7"
+        app:layout_constraintTop_toBottomOf="@+id/loanDate"
+        app:layout_constraintVertical_bias="0.966" />
 
     <TextView
         android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
+        android:layout_marginTop="24dp"
         android:text="Add Bill"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -63,14 +81,14 @@
         android:id="@+id/loanName"
         android:layout_width="@dimen/Input_box_width"
         android:layout_height="50dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="Bill name"
         android:inputType="text"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
-        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintHorizontal_bias="0.52"
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
@@ -82,7 +100,7 @@
         android:background="@drawable/crud_input"
         android:ems="10"
         android:hint="Amount"
-        android:inputType="number"
+        android:inputType="numberDecimal"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintStart_toStartOf="@+id/view7"
@@ -108,7 +126,7 @@
         android:id="@+id/AddLoan"
         android:layout_width="126dp"
         android:layout_height="52dp"
-        android:layout_marginStart="48dp"
+        android:layout_marginStart="40dp"
         android:layout_marginBottom="52dp"
         android:background="@drawable/crud_button"
         android:text="Add"
@@ -119,13 +137,31 @@
         app:layout_constraintBottom_toBottomOf="@+id/view7"
         app:layout_constraintStart_toStartOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/loanDate"
-        app:layout_constraintVertical_bias="0.904" />
+        app:layout_constraintVertical_bias="0.4" />
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="126dp"
+        android:layout_height="52dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/crud_button"
+        android:text="Update"
+        android:visibility="gone"
+        android:onClick="Update_date"
+        android:textAlignment="center"
+        android:textColor="#020202"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/view7"
+        app:layout_constraintEnd_toStartOf="@+id/deleteBtn"
+        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintStart_toStartOf="@+id/view7" />
 
     <Button
         android:id="@+id/cancleBTN"
         android:layout_width="115dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="36dp"
+        android:layout_marginEnd="40dp"
         android:layout_marginBottom="56dp"
         android:background="@drawable/crud_button"
         android:text="Cancle"
@@ -136,7 +172,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/view7"
         app:layout_constraintEnd_toEndOf="@+id/view7"
         app:layout_constraintTop_toBottomOf="@+id/loanDate"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.458" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar2"
@@ -154,7 +190,7 @@
         android:id="@+id/home_btn"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
@@ -162,24 +198,14 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/transaction_btn_nav"
-        android:layout_width="50dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/home_btn"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:srcCompat="@drawable/transaction"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageButton
         android:id="@+id/target_btn_transaction"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/transaction_btn_nav"
+        app:layout_constraintStart_toEndOf="@+id/home_btn"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="1.0"
         app:srcCompat="@drawable/target"
         tools:ignore="SpeakableTextPresentCheck" />
 
@@ -187,7 +213,7 @@
         android:id="@+id/bill_btn"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="42dp"
         app:layout_constraintStart_toEndOf="@+id/target_btn_transaction"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:srcCompat="@drawable/bill"
@@ -197,24 +223,13 @@
         android:id="@+id/loan_btn"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bill_btn"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
+        app:layout_constraintVertical_bias="0.0"
         app:srcCompat="@drawable/loan1"
         tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageButton
-        android:id="@+id/imageButton36"
-        android:layout_width="85dp"
-        android:layout_height="72dp"
-        android:layout_marginBottom="12dp"
-        android:backgroundTint="#003086"
-        app:layout_constraintBottom_toBottomOf="@+id/textView"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/baseline_account_circl24" />
 
     <ImageButton
         android:id="@+id/pickerDate"
@@ -226,6 +241,34 @@
         app:layout_constraintStart_toStartOf="@+id/loanDate"
         app:layout_constraintTop_toTopOf="@+id/loanDate"
         app:layout_constraintVertical_bias="0.0"
-        app:srcCompat="@drawable/baseline_calendar_month_24" />
+        app:srcCompat="@drawable/baseline_calendar_month_24"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <View
+        android:id="@+id/view10"
+        android:layout_width="409dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="72dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <LinearLayout
+        android:layout_width="413dp"
+        android:layout_height="54dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/view10"
+        app:layout_constraintEnd_toEndOf="@+id/view10"
+        app:layout_constraintStart_toStartOf="@+id/view10"
+        app:layout_constraintTop_toTopOf="@+id/view10">
+
+        <Button
+            android:id="@+id/bList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="showlist"
+            android:text="Bill List" />
+    </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -12,7 +12,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.spendee.Adapters.Borrowed_loan_adapter
 import com.example.spendee.DataClass.Borrowed_loan
 import com.example.spendee.databinding.ActivityAddLoanBinding
-import com.example.spendee.databinding.ActivityUpdateLoanBinding
 import com.example.spendee.databinding.ActivityViewBorrowedLoanBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.*
@@ -41,20 +40,14 @@ class View_Borrowed_loan : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.transactionBtnNav.setOnClickListener {
-            val intent = Intent(this,Transaction::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
-            startActivity(intent)
-        }
-
         binding.targetBtnTransaction.setOnClickListener {
-            val intent = Intent(this,Goal::class.java)
+            val intent = Intent(this,MainGoal::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
 
         binding.billBtn.setOnClickListener {
-            val intent = Intent(this,View_bills::class.java)
+            val intent = Intent(this,Main_Bill::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }

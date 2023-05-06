@@ -32,13 +32,13 @@ class Transaction : AppCompatActivity() {
         }
 
         binding.targetBtnTransaction.setOnClickListener {
-            val intent = Intent(this,Goal::class.java)
+            val intent = Intent(this,MainGoal::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
 
         binding.billBtn.setOnClickListener {
-            val intent = Intent(this,View_bills::class.java)
+            val intent = Intent(this,Main_Bill::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }

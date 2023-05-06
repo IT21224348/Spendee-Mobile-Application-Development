@@ -254,7 +254,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/home_btn"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:srcCompat="@drawable/transaction"
+        app:srcCompat="@drawable/transactionmain"
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton

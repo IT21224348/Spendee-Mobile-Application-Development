@@ -21,9 +21,9 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="182dp"
-        android:layout_height="65dp"
-        android:text="Home"
+        android:layout_width="202dp"
+        android:layout_height="70dp"
+        android:text="Transaction"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
@@ -51,7 +51,7 @@
         android:id="@+id/home_btn"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
@@ -59,23 +59,12 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/transaction_btn_nav"
-        android:layout_width="50dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/home_btn"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:srcCompat="@drawable/transaction"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageButton
         android:id="@+id/target_btn_transaction"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/transaction_btn_nav"
+        app:layout_constraintStart_toEndOf="@+id/home_btn"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:srcCompat="@drawable/target"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -84,7 +73,7 @@
         android:id="@+id/bill_btn"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="42dp"
         app:layout_constraintStart_toEndOf="@+id/target_btn_transaction"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:srcCompat="@drawable/bill"
@@ -95,7 +84,7 @@
         android:id="@+id/loan_btn"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toEndOf="@+id/bill_btn"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
@@ -106,12 +95,12 @@
         android:id="@+id/income"
         android:layout_width="340dp"
         android:layout_height="55dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="408dp"
         android:background="@drawable/signup_btn_custom"
         android:text="Add Incomes"
         android:textColor="#FEFEFE"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintHorizontal_bias="0.679"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
@@ -119,13 +108,49 @@
         android:id="@+id/expense"
         android:layout_width="340dp"
         android:layout_height="55dp"
-        android:layout_marginTop="420dp"
+        android:layout_marginTop="476dp"
         android:background="@drawable/signup_btn_custom"
         android:text="Add Expenses"
         android:textColor="#FEFEFE"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.679"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <ImageView
+        android:id="@+id/imageView22"
+        android:layout_width="235dp"
+        android:layout_height="174dp"
+        android:layout_marginTop="112dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:srcCompat="@drawable/transactionmain" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="324dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="44dp"
+        android:text="You can  manage your transaction from here"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.525"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView22" />
+
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="355dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="28dp"
+        android:text="Tap a transaction record to view update and delete option"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.657"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -18,13 +18,6 @@ class Home : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        val user_email = intent.getStringExtra("userEmail")
-         val user_id  = intent.getStringExtra("firebaseId")
-
-        binding.Email.text = "Email: $user_email"
-        binding.uid.text = "Firebase Id: $user_id"
-
-
         //Set up navigation bar
         binding.homeBtn.setOnClickListener {
             val intent= Intent(this,Home::class.java)
@@ -32,20 +25,15 @@ class Home : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.transactionBtnNav.setOnClickListener {
-            val intent =Intent(this,Transaction::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
-            startActivity(intent)
-        }
 
         binding.targetBtnTransaction.setOnClickListener {
-            val intent = Intent(this,Goal::class.java)
+            val intent = Intent(this,MainGoal::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
 
         binding.billBtn.setOnClickListener {
-            val intent = Intent(this,View_bills::class.java)
+            val intent = Intent(this,Main_Bill::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
@@ -56,14 +44,14 @@ class Home : AppCompatActivity() {
             startActivity(intent)
         }
          // Attach a click listener to the "Add income" Imagebutton using view binding
-        binding.addIncome.setOnClickListener {
+        binding.income.setOnClickListener {
             val intent = Intent(this,Add_income::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
         }
 
         // Attach a click listener to the "Add expenses" Imagebutton using view binding
-        binding.addExpences.setOnClickListener {
+        binding.expense.setOnClickListener {
             val intent = Intent(this,Add_expences::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
             startActivity(intent)
