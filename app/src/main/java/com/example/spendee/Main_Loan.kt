@@ -23,12 +23,6 @@ class Main_Loan : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.transactionBtnNav.setOnClickListener {
-            val intent = Intent(this,Transaction::class.java)
-            intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP
-            startActivity(intent)
-        }
-
         binding.targetBtnTransaction.setOnClickListener {
             val intent = Intent(this,MainGoal::class.java)
             intent.flags = Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_SINGLE_TOP

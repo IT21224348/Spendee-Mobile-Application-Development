@@ -15,6 +15,12 @@
         android:theme="@style/Theme.Spendee"
         tools:targetApi="31">
         <activity
+            android:name=".View_expense"
+            android:exported="false" />
+        <activity
+            android:name=".View_income"
+            android:exported="false" />
+        <activity
             android:name=".Main_Bill"
             android:exported="false" />
         <activity
@@ -23,45 +29,26 @@
         <activity
             android:name=".View_lent_loan"
             android:exported="false" />
-        <activity
-            android:name=".View_Lented_loan"
-            android:exported="false" />
-        <activity
-            android:name=".View_lente_loan"
-            android:exported="false" />
+
         <activity
             android:name=".Add_Lent_Loan"
             android:exported="false" />
         <activity
             android:name=".Transaction"
             android:exported="true" />
-        <activity
-            android:name=".Profile"
-            android:exported="true" />
+
         <activity
             android:name=".View_Category"
             android:exported="true" />
-        <activity
-            android:name=".Update_category"
-            android:exported="true" />
-        <activity
-            android:name=".Add_Category"
-            android:exported="true" />
+
+
         <activity
             android:name=".Home"
             android:exported="true" />
         <activity
             android:name=".View_bills"
             android:exported="true" />
-        <activity
-            android:name=".Update_bill"
-            android:exported="true" />
-        <activity
-            android:name=".Update_income"
-            android:exported="true" />
-        <activity
-            android:name=".Update_expence"
-            android:exported="true" />
+
         <activity
             android:name=".Add_expences"
             android:exported="true" />
@@ -71,9 +58,7 @@
         <activity
             android:name=".Main_Loan"
             android:exported="true" />
-        <activity
-            android:name=".Update_goal"
-            android:exported="true" />
+
         <activity
             android:name=".Add_bill"
             android:exported="true" />

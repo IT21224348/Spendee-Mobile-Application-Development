@@ -54,14 +54,14 @@
         android:theme="?attr/actionBarTheme"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
         android:id="@+id/home_btn"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
@@ -69,23 +69,12 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/transaction_btn_nav"
-        android:layout_width="50dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/home_btn"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:srcCompat="@drawable/transaction"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageButton
         android:id="@+id/target_btn_transaction"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/transaction_btn_nav"
+        app:layout_constraintStart_toEndOf="@+id/home_btn"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:srcCompat="@drawable/target"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -94,7 +83,7 @@
         android:id="@+id/bill_btn"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="42dp"
         app:layout_constraintStart_toEndOf="@+id/target_btn_transaction"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:srcCompat="@drawable/bill"
@@ -116,9 +105,9 @@
 
     <ImageButton
         android:id="@+id/loan_Btn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_width="@dimen/Footer_icon_width"
+        android:layout_height="@dimen/Footer_icon_height"
+        android:layout_marginStart="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.545"
@@ -150,16 +139,16 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
     <TextView
-        android:id="@+id/textView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Add Loan - To add a new loan"
-        android:textSize="16sp"
+        android:id="@+id/textView16"
+        android:layout_width="311dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="52dp"
+        android:text="Tap a  loan record to display edit and delete options"
+        android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/add_loan"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView24"
-        app:layout_constraintVertical_bias="0.076" />
+        app:layout_constraintVertical_bias="0.29" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

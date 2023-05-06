@@ -39,7 +39,7 @@
         android:id="@+id/textView"
         android:layout_width="182dp"
         android:layout_height="65dp"
-        android:text="My Goals"
+        android:text="My Targets"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="34sp"
@@ -67,7 +67,7 @@
         android:id="@+id/home_btn"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
@@ -75,23 +75,12 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageButton
-        android:id="@+id/transaction_btn_nav"
-        android:layout_width="50dp"
-        android:layout_height="48dp"
-        android:layout_marginStart="25dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/home_btn"
-        app:layout_constraintTop_toTopOf="@+id/toolbar2"
-        app:srcCompat="@drawable/transaction"
-        tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageButton
         android:id="@+id/target_btn_transaction"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="42dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/transaction_btn_nav"
+        app:layout_constraintStart_toEndOf="@+id/home_btn"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:srcCompat="@drawable/target"
         tools:ignore="SpeakableTextPresentCheck" />
@@ -100,7 +89,7 @@
         android:id="@+id/bill_btn"
         android:layout_width="50dp"
         android:layout_height="48dp"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="42dp"
         app:layout_constraintStart_toEndOf="@+id/target_btn_transaction"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
         app:srcCompat="@drawable/bill"
@@ -111,7 +100,7 @@
         android:id="@+id/loan_btn"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="25dp"
+        android:layout_marginStart="42dp"
         app:layout_constraintBottom_toBottomOf="@+id/toolbar2"
         app:layout_constraintStart_toEndOf="@+id/bill_btn"
         app:layout_constraintTop_toTopOf="@+id/toolbar2"
@@ -120,14 +109,14 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/goalList"
-        android:layout_width="366dp"
-        android:layout_height="396dp"
+        android:layout_width="367dp"
+        android:layout_height="418dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.488"
+        app:layout_constraintHorizontal_bias="0.568"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.549" />
+        app:layout_constraintVertical_bias="0.536" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
